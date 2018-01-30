@@ -1,0 +1,37 @@
+
+<div class="panel panel-default">
+<div class="panel-body">
+<form #newCribForm="ngForm">
+
+
+    <label for="Name" class="">Name</label>
+        <input
+          type="text"
+          class="form-control"
+          placeholder=  {{ingredient.name}}
+          name="Name"
+          ngModel
+          required>
+
+
+
+      <label for="address" class="">Quantity</label>
+          <input
+              type="text"
+              class="form-control"
+              placeholder= {{ingredient.quantity}}
+              name="address"
+              ngModel
+              required>
+          
+              <button
+                        (click)="addDetails()"
+                        class="btn btn-primary listing-button"
+                        type="submit"
+
+                        ng-show="addListing">
+                          Add
+                      </button>
+                    </form>
+          </div>
+        </div>
